@@ -1,0 +1,11 @@
+.hero__btn {
+    font-family: inherit;
+    @include font(700, 16px, 1.88, 0.06em);
+    font-style: normal;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: var(--accent-color);
+    padding: 10px 32px;
+    border-radius: 3px;
+    border: 0px;
+  }

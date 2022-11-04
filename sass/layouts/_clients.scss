@@ -1,0 +1,28 @@
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    &-soc-link {
+      width: 170px;
+      height: 92px;
+      @extend %align-list;
+      justify-content: center;
+      fill: #afb1b8;
+      border: 1px solid #afb1b8;
+      border-radius: 4px;
+      transition: fill 250ms var(--main-cub);
+      &:hover,
+      &:focus {
+        fill: var(--accent-color);
+        border: 1px solid var(--accent-color);
+      }
+    }
+  }
+  
+ 
+  
+  .clients-list {
+    justify-content: center;
+    @extend %align-list;
+    gap: 30px;
+  }
+  

@@ -1,0 +1,18 @@
+.thumb {
+    position: relative;
+    overflow: hidden;
+    &-item {
+      position:absolute;
+      top: 0;
+      left: 0;
+      @include font(400, 18px, 156%, 0.03em);
+      color: #FFFFFF;
+      background-color: rgba(33, 150, 243, 0.9);
+      padding: 63px 24px;
+      height: 100%;
+      transform: translateY(101%);
+      transition: 250ms var(--main-cub);
+      }
+  }
+  
+ 
