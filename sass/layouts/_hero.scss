@@ -81,8 +81,12 @@
     display: flex;
     gap: 30px;
     &-title {
-      padding-top: 94px;
-      padding-bottom: 94px;
+      // padding-top: 94px;
+      // padding-bottom: 94px;
+
+      @media screen and (max-width: 1599px) {
+        display: none;
+      }
     }
     &-thumb {
       position: relative;

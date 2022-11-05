@@ -522,9 +522,10 @@ body {
   display: flex;
   gap: 30px;
 }
-.doing-title {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (max-width: 1599px) {
+  .doing-title {
+    display: none;
+  }
 }
 .doing-thumb {
   position: relative;
