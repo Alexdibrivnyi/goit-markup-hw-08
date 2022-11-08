@@ -23,6 +23,11 @@
     max-width: 696px;
     margin: 0 auto;
     margin-bottom: 30px;
+
+    // @media screen and (max-width: 1599px)  {
+    //   font-size: 26px;
+    //   line-height: 1.62;
+    // }
   }
   
 
@@ -43,7 +48,20 @@
   
   .picture-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
+  }
+
+  .picture-list__item {
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width: 1600px) {
+      width: calc((100% - 90px) / 4);
+    }
   }
   
   .benefits {

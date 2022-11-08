@@ -67,20 +67,82 @@
             >
           </li>
         </ul>
+        <!-- <button 
+        type="button" 
+        class="menu-button is-open"
+        aria-expanded="false" 
+        data-menu-button>
+          <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+            <use class="icon-cross" href="./images/symbol-defs.svg#icon-close_40px"></use>
+            <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button> -->
+
+<button type="button" class="menu-open-btn">O</button>
+      </div>
+      <div class="mob-menu">
+        <div class="container">
+          <button type="button" class="menu-close-btn">X</button>
+          <ul class="mob-menu-list list">
+            <li class="mob-item">
+              <a class="mob-link link current" href="./index.html">Студія</a>
+            </li>
+            <li class="mob-item">
+              <a class="mob-link link" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="mob-item">
+              <a class="mob-link link" href="#">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="mob-connect">
+          <li>
+            <a class="mob-tel link" href="tel:+380961111111">
+             
+              +38 096 111 11 11</a
+            >
+          </li>
+          <li class="mob-contacts">
+            <a class="mob-mail link" href="mailto:info@devstudio.com">
+             
+              info@devstudio.com</a
+            >
+          </li>
+
+        </ul>
+        
+        <ul class="mob-bottom-links">
+          <li class="mob-bottom-list">
+            <a class="mob-bottom-item" href="/">Instagram</a>
+          </li>
+          <li class="mob-bottom-list">
+            <a class="mob-bottom-item" href="/">Twitter</a>
+          </li>
+          <li class="mob-bottom-list">
+            <a class="mob-bottom-item" href="/">Facebook</a>
+          </li>
+          <li class="mob-bottom-list">
+            <a class="mob-bottom-item" href="/">LinkedIn</a>
+          </li>
+        </ul>
+      
+
+        </div>
+       
       </div>
     </header>
     <section class="hero">
-      <div class="container  hero__container">
+      <div class="container hero__container">
         <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
         <button class="hero__btn" data-modal-open type="button">
           Замовити послугу
         </button>
       </div>
     </section>
-    <section class="benefits section"> 
+    <section class="benefits section">
       <div class="container benefits__container">
-        <ul class="picture-list"> 
-          <li class="picture-list__item"> 
+        <ul class="picture-list">
+          <li class="picture-list__item">
             <div class="benefits__icon-container">
               <svg class="benefits__icon" width="70" height="70">
                 <use href="./images/symbol-defs.svg#icon-antenna-1"></use>
@@ -92,7 +154,7 @@
               формування позиції.
             </p>
           </li>
-          <li class="picture-list__item"> 
+          <li class="picture-list__item">
             <div class="benefits__icon-container">
               <svg class="benefits__icon" width="70" height="70">
                 <use href="./images/symbol-defs.svg#icon-clock-1"></use>
@@ -104,7 +166,7 @@
               у себе.
             </p>
           </li>
-          <li class="picture-list__item"> 
+          <li class="picture-list__item">
             <div class="benefits__icon-container">
               <svg class="benefits__icon" width="70" height="70">
                 <use href="./images/symbol-defs.svg#icon-diagram-1"></use>
@@ -115,7 +177,7 @@
               Так само консультація з широким активом значною мірою зумовлює.
             </p>
           </li>
-          <li class="picture-list__item"> 
+          <li class="picture-list__item">
             <div class="benefits__icon-container">
               <svg class="benefits__icon" width="70" height="70">
                 <use href="./images/symbol-defs.svg#icon-astronaut-1"></use>
@@ -581,7 +643,6 @@
             ></textarea>
           </label>
 
-
           <div class="modal-label comment">
             <input
               type="checkbox"
@@ -602,12 +663,11 @@
             >
           </div>
 
-
-
           <button type="submit" class="send-button">Відправити</button>
         </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

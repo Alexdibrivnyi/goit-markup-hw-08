@@ -483,6 +483,7 @@ body {
 
 .picture-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -605,8 +606,6 @@ body {
 
 .team {
   background: #f5f4fa;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 .team-text {
   font-size: 16px;
@@ -646,7 +645,20 @@ body {
 
 .clients-list {
   justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
   gap: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .clients-empty-li {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  .clients-empty-li {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .item-list {
