@@ -3,6 +3,8 @@
     &-list {
       display: flex;
       gap: 50px;
+
+
     }
   }
 
@@ -18,9 +20,7 @@
   
   .header__container {
     @extend %align-list;
-  }
-  
-  
+    }
  
   
   .logo {
@@ -102,25 +102,6 @@
     display: flex;
   }
   
-  // .menu-button {
-  //   display: inline-flex;
-  //   margin: 0;
-  //   padding: 0;
-  //   border: 0;
-  //   background-color: transparent;
-  // }
-  
-  // .menu-button .icon-cross {
-  //   display: none;
-  // }
-
-  // .menu-button.is-open .icon-cross {
-  //   display: block;
-  // }
-
-  // .menu-button.is-open .icon-menu {
-  //   display: none;
-  // }
 
   .menu-open-btn {
 margin-left: auto;
@@ -134,7 +115,19 @@ margin-left: auto;
     z-index: 1;
     padding-top: 10px;
     padding-bottom: 48px;
+    >.container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: auto;
+    }
   }
+
+  .mob-menu__top {
+    margin-bottom: 50px;
+  }
+  
   .menu-close-btn {
     margin-left: auto;
     background-color: transparent;
@@ -142,9 +135,6 @@ margin-left: auto;
     display: block;
   }
 
-  .mob-menu-list {
-    margin-bottom: 302px;
-  }
   
   .mob-item:not(:last-child) {
     margin-bottom: 32px;
@@ -159,10 +149,7 @@ letter-spacing: 0.02em;
 color: #212121;
   }
 
-  .current {
-  }
-  .mob-connect {
-  }
+
   .mob-contacts {
     margin-top: 32px;
     margin-bottom: 64px;
@@ -176,8 +163,7 @@ letter-spacing: 0.02em;
 
 color: #757575;
   }
-  .mob-icon {
-  }
+
   .mob-tel {
     font-weight: 500;
 font-size: 34px;

@@ -45,6 +45,10 @@ body {
   text-decoration: none;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -453,16 +457,23 @@ body {
   padding-top: 10px;
   padding-bottom: 48px;
 }
+.mob-menu > .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+}
+
+.mob-menu__top {
+  margin-bottom: 50px;
+}
 
 .menu-close-btn {
   margin-left: auto;
   background-color: transparent;
   border: none;
   display: block;
-}
-
-.mob-menu-list {
-  margin-bottom: 302px;
 }
 
 .mob-item:not(:last-child) {
@@ -937,11 +948,22 @@ body {
   justify-content: flex-start;
   align-items: baseline;
 }
+@media screen and (min-width: 480px) and (min-width: 767px) {
+  .footer-container {
+    flex-direction: column;
+  }
+}
 .footer-container-left {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   margin-right: 70px;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .footer-container-left {
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
 }
 .footer-container-right {
   flex-wrap: wrap;
@@ -949,12 +971,35 @@ body {
   height: 80px;
   margin-right: 93px;
 }
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .footer-container-right {
+    margin: 0 auto;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  .tablet-div {
+    display: flex;
+    gap: 165px;
+  }
+}
 
 .footer-container-third {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-start;
+}
+@media screen and (min-width: 480px) {
+  .footer-container-third {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  .footer-container-third {
+    margin-top: 60px;
+  }
 }
 
 .third-footer-text {
@@ -969,6 +1014,18 @@ body {
 
 .subscribe-div {
   display: flex;
+}
+@media screen and (min-width: 480px) {
+  .subscribe-div {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .subscribe {
+    margin: 0 auto;
+    margin-top: 30px;
+  }
 }
 
 .subscribe-email {
@@ -1000,6 +1057,12 @@ body {
   line-height: 1.25px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (min-width: 480px) {
+  .subscribe-email {
+    min-width: 450px;
+    height: 50px;
+  }
 }
 
 .subscribe-btn {
