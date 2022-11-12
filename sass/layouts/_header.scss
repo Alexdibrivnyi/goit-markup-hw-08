@@ -15,12 +15,19 @@
   @extend %align-list;
 }
   
+
   .header-connect {
     display: flex;
     margin-left: auto;
+    gap: 30px;
 
     @media screen and (max-width: 767px) {
       display: none;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1599px) {
+      display: block;
+      margin-right: 0;
     }
   }
 
@@ -28,7 +35,9 @@
   
   .header__container {
     @extend %align-list;
-    position: relative;
+    // position: relative;
+
+    
     }
  
   
@@ -41,6 +50,19 @@
     margin-right: 93px;
     padding-top: 24px;
     padding-bottom: 25px;
+
+    @media screen and (min-width: 480px)and (max-width: 767px)  {
+      @include font(null, 24px, 1.16, 0.03em);
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1599px)  {
+      @include font(null, 24px, 1.16, 0.03em);
+      padding-top: 26px;
+      padding-bottom: 26px;
+      margin-right: 88px;
+    }
   }
 
 
@@ -84,7 +106,7 @@
   .header-mail {
     @include font(500, 14px, 1.14, 0.02em);
     color: #757575;
-    margin-right: 50px;
+    
     transition: color 250ms var(--main-cub);
     &:hover,
     &:focus {
@@ -96,7 +118,7 @@
   .header-tel {
     @include font(500, 14px, 1.14, 0.02em);
     color: #757575;
-    margin-left: 40px;
+    
     transition: color 250ms var(--main-cub);
     &:hover,
     &:focus {
@@ -117,6 +139,11 @@
     position: absolute;
     top: 10px;
     right: 15px;
+
+    @media screen and (max-width: 768px) {
+      background-color: #FFFFFF;
+      border: none;
+    }
 
     @media screen and (min-width: 768px) {
       display: none;
