@@ -117,9 +117,7 @@
     }
   }
   
-  .benefits {
-    padding-top: 94px;
-  }
+ 
   
   .benefits__item {
     @include font(700, 14px, 1.14, 0.03em);
@@ -154,13 +152,13 @@
   .doing {
     display: flex;
     gap: 30px;
+
     &-title {
-    
+    padding-bottom: 94px;
 
       @media screen and (max-width: 1599px) {
         display: none;
       }
-    }
     &-thumb {
       position: relative;
       height: 294px;
@@ -183,5 +181,4 @@
   @extend %align-list;
   bottom: 0;
   right: 0;
-  
   }
