@@ -20,7 +20,9 @@
     url("../images/heromob2x.jpg");
 }
 
-@include mobile {
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: linear-gradient(
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)
@@ -35,7 +37,9 @@
 }
 }
 
-@include tablet {
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -49,6 +53,8 @@
       url("../images/herotabl2x.jpg");
   }
   }
+
+
   @include desktop {
     background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -131,7 +137,7 @@
     padding-bottom: 10px;
     align-items: baseline;
 
-    @media screen and (max-width: 1599px) {
+    @media screen and (max-width: 767px) {
       display: flex;
     justify-content: center;
     }

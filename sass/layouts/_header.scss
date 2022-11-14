@@ -112,6 +112,10 @@
     &:focus {
       color: var(--accent-color);
     }
+
+    @media screen and (max-width: 1599px) {
+      font-size: 12px;
+    }
   }
   
   
@@ -123,6 +127,10 @@
     &:hover,
     &:focus {
       color: var(--accent-color);
+    }
+
+    @media screen and (max-width: 1599px) {
+      font-size: 12px;
     }
   }
   

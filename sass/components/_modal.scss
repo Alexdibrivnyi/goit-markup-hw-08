@@ -39,6 +39,10 @@
     fill: var(--accent-color);
   }
   }
+
+  @media screen and (min-width: 480px) and (max-width: 1599px) {
+    width: 450px;
+  }
   }
   
   .backdrop.is-hidden .modal {

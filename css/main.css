@@ -194,6 +194,11 @@ body {
 .modal-btn:hover, .modal-btn:focus {
   fill: var(--accent-color);
 }
+@media screen and (min-width: 480px) and (max-width: 1599px) {
+  .modal {
+    width: 450px;
+  }
+}
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scaleY(0);
@@ -460,6 +465,11 @@ body {
 .header-mail:hover, .header-mail:focus {
   color: var(--accent-color);
 }
+@media screen and (max-width: 1599px) {
+  .header-mail {
+    font-size: 12px;
+  }
+}
 
 .header-tel {
   font-weight: 500;
@@ -471,6 +481,11 @@ body {
 }
 .header-tel:hover, .header-tel:focus {
   color: var(--accent-color);
+}
+@media screen and (max-width: 1599px) {
+  .header-tel {
+    font-size: 12px;
+  }
 }
 
 .header-item {
@@ -594,22 +609,26 @@ body {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/heromob2x.jpg");
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/heromob2x.jpg");
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (max-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/heromob2x.jpg");
   }
 }
-@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (max-width: 1599px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/heromob2x.jpg");
-  }
-}
-@media screen and (min-width: 768px) {
-  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/herotabl2x.jpg");
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (max-width: 1599px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1599px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1599px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1599px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/herotabl2x.jpg");
   }
@@ -703,7 +722,7 @@ body {
   padding-bottom: 10px;
   align-items: baseline;
 }
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 767px) {
   .benefits__item {
     display: flex;
     justify-content: center;
@@ -940,6 +959,26 @@ body {
   color: var(--main-color);
 }
 
+@media screen and (max-width: 479px) {
+  .adress-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  .adress-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 @media screen and (min-width: 480px) and (max-width: 1599px) {
   .adress-list {
     display: flex;
@@ -975,6 +1014,13 @@ body {
 }
 .contacts-address-link:hover, .contacts-address-link:focus {
   color: var(--accent-color);
+}
+@media screen and (max-width: 479px) {
+  .contacts-address-link {
+    width: auto;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .footer {
@@ -1034,6 +1080,12 @@ body {
   text-decoration: none;
 }
 
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .adapt-logo {
+    display: flex;
+    justify-content: center;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1599px) {
   .adapt-logo {
     justify-content: center;
@@ -1074,6 +1126,15 @@ body {
   justify-content: flex-start;
   align-items: baseline;
 }
+@media screen and (max-width: 479px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .footer-container {
     flex-direction: column;
@@ -1095,7 +1156,12 @@ body {
   flex-direction: column;
   margin-right: 70px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
+  .footer-container-left {
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .footer-container-left {
     margin-left: 124px;
     margin-right: 124px;
@@ -1109,6 +1175,14 @@ body {
   height: 80px;
   margin-right: 93px;
 }
+@media screen and (max-width: 479px) {
+  .footer-container-right {
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+}
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .footer-container-right {
     margin-left: 137px;
@@ -1119,6 +1193,7 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1599px) {
   .footer-container-right {
     justify-content: center;
+    margin-right: 0;
   }
 }
 
@@ -1127,6 +1202,11 @@ body {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-start;
+}
+@media screen and (max-width: 479px) {
+  .footer-container-third {
+    align-items: center;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1599px) {
   .footer-container-third {
@@ -1152,6 +1232,12 @@ body {
 
 .tablet {
   display: flex;
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .tablet {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .tablet {
@@ -1202,7 +1288,14 @@ body {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 479px) {
+  .subscribe-email {
+    min-width: auto;
+    margin-right: 0;
+    height: 50px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1599px) {
   .subscribe-email {
     min-width: 450px;
     height: 50px;
