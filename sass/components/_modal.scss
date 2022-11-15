@@ -40,9 +40,21 @@
   }
   }
 
+  @media screen and (max-width: 479px) {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 85%;
+  }
+
+
   @media screen and (min-width: 480px) and (max-width: 1599px) {
     width: 450px;
+    max-height: 609px;
+   
   }
+
+
   }
   
   .backdrop.is-hidden .modal {
@@ -63,10 +75,27 @@
   color: #212121;
   margin-bottom: 12px;
   display: block;
-  height: 23px;
+
+
+  @media screen and (max-width: 480px) {
+    font-size: 20px;
+line-height: 150%;
+/* or 150% */
+
+  }
+
+  @media screen and (min-width: 1600px) {
+height: 23px;
+  }
   }
   
+  .form {
+    @media screen and (max-width: 480px) {
+ 
+  max-width: 90%;
   
+    }
+  }
   
   .modal-input {
     width: 100%;
@@ -130,10 +159,10 @@
   }
   
 
-  .comment {
-  display: flex;
-  justify-content: center;
-  }
+  // .comment {
+  // display: flex;
+  // justify-content: center;
+  // }
   
   
   
@@ -141,6 +170,7 @@
     @include font(400, 14px, 1.71px, 0.03em);  
   color: #757575;
   @extend %align-list;
+
   span {
     width: 15px;
     height: 15px;
@@ -158,6 +188,17 @@
     .input-check:focus + & {
       border-color: var(--accent-color);
     }
+    
+  }
+
+  @media screen and (max-width: 479px) {
+display: flex;
+flex-wrap: wrap;
+  }
+
+  @media screen and (max-width: 1599px) {
+    font-size: 12px;
+line-height: 1.16;
   }
   }
   

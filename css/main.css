@@ -194,9 +194,18 @@ body {
 .modal-btn:hover, .modal-btn:focus {
   fill: var(--accent-color);
 }
+@media screen and (max-width: 479px) {
+  .modal {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 85%;
+  }
+}
 @media screen and (min-width: 480px) and (max-width: 1599px) {
   .modal {
     width: 450px;
+    max-height: 609px;
   }
 }
 
@@ -218,7 +227,24 @@ body {
   color: #212121;
   margin-bottom: 12px;
   display: block;
-  height: 23px;
+}
+@media screen and (max-width: 480px) {
+  .modal-title {
+    font-size: 20px;
+    line-height: 150%;
+    /* or 150% */
+  }
+}
+@media screen and (min-width: 1600px) {
+  .modal-title {
+    height: 23px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .form {
+    max-width: 90%;
+  }
 }
 
 .modal-input {
@@ -296,11 +322,6 @@ body {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.comment {
-  display: flex;
-  justify-content: center;
-}
-
 .check-text {
   font-weight: 400;
   font-size: 14px;
@@ -324,6 +345,18 @@ body {
 }
 .input-check:focus + .check-text span {
   border-color: var(--accent-color);
+}
+@media screen and (max-width: 479px) {
+  .check-text {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1599px) {
+  .check-text {
+    font-size: 12px;
+    line-height: 1.16;
+  }
 }
 
 .input-check {
@@ -969,6 +1002,16 @@ body {
     margin-bottom: 60px;
   }
 }
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .adress-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1599px) {
   .adress-list {
     display: flex;
@@ -977,14 +1020,6 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-  }
-}
-@media screen and (min-width: 480px) and (max-width: 1599px) {
-  .adress-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    justify-content: center;
   }
 }
 
@@ -1138,6 +1173,7 @@ body {
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .footer-container {
     flex-direction: column;
+    align-items: center;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1599px) {
@@ -1158,15 +1194,14 @@ body {
 }
 @media screen and (max-width: 479px) {
   .footer-container-left {
-    margin: 0 auto;
+    margin: 0;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .footer-container-left {
-    margin-left: 124px;
-    margin-right: 124px;
     margin-bottom: 60px;
     align-items: center;
+    margin-right: 0;
   }
 }
 .footer-container-right {
@@ -1185,7 +1220,7 @@ body {
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .footer-container-right {
-    margin-left: 137px;
+    margin-right: 0;
     margin-bottom: 60px;
     justify-content: center;
   }
@@ -1242,6 +1277,7 @@ body {
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .tablet {
     flex-direction: column;
+    align-items: center;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1599px) {
