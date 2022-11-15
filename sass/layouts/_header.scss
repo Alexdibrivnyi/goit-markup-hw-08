@@ -134,7 +134,19 @@
     }
   }
   
-  
+.mail {
+  @media screen and (max-width: 1599px) {
+    width: 14px;
+  height: 10px;
+  }
+}
+
+.tel {
+  @media screen and (max-width: 1599px) {
+    width: 10px;
+  height: 14px;
+  }
+}
   
   .header-item {
     position: relative;
@@ -163,6 +175,7 @@
     top: 0;
     background-color: #fff;
     width: 100vw;
+    height: 100%;
     z-index: 1;
     padding-top: 10px;
     padding-bottom: 48px;
@@ -245,6 +258,9 @@ color: #2196F3;
     text-decoration: none;
     padding-right: 10px;
 
+    @media screen and (max-width: 480px) {
+      font-size: 14px;
+    }
   }
 
   .mob-bottom-list:not(:last-child) {
